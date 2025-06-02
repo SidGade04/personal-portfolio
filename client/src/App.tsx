@@ -1,8 +1,8 @@
 // src/App.tsx
 import { Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
-import { useEffect } from 'react'
-import { initLenis } from './lib/scroll'
+// import { useEffect } from 'react'
+// import { initLenis } from './lib/scroll'
 
 function App() {
   // useEffect(() => {
