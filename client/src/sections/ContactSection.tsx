@@ -6,6 +6,8 @@ import { Mail, Linkedin } from "lucide-react"
 import toast from "react-hot-toast"
 
 export default function ContactSection() {
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
@@ -18,7 +20,7 @@ export default function ContactSection() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch(`${API_URL}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
