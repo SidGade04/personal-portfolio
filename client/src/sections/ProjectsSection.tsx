@@ -87,8 +87,18 @@ const projects = [
   }
 ]
 
+type Project = {
+  title: string
+  description: string
+  tech: string[]
+  details: string
+  image?: string
+  readme?: string
+}
+
 export default function ProjectsSection() {
-  const [selectedProject, setSelectedProject] = useState(null)
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
+
 
   return (
     <section id="projects" className="py-20 bg-background text-foreground">
