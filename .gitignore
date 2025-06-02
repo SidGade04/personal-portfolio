@@ -32,3 +32,5 @@ server/.env
 server/*.pyc
 server/instance/
 server/.DS_Store
+
+personal-portfolio.pem
