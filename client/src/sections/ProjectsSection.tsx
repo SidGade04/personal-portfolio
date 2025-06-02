@@ -92,9 +92,10 @@ type Project = {
   description: string
   tech: string[]
   details: string
-  image?: string
-  readme?: string
+  image?: string | null
+  readme?: string | null
 }
+
 
 export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
