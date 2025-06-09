@@ -1,6 +1,7 @@
 // src/App.tsx
 import { Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
+import { Toaster } from "react-hot-toast";
 // import { useEffect } from 'react'
 // import { initLenis } from './lib/scroll'
 
@@ -10,9 +11,13 @@ function App() {
   // }, [])
 
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-    </Routes>
+    <>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+        <Toaster position="top-right" reverseOrder={false} />
+    </>
+
   )
 }
 
